@@ -167,6 +167,9 @@ function doomsday_of_history(){
     ]      
   }
   const app = document.querySelector('#app');
-  app.innerHTML=result();
+  app.innerHTML=`
+  <h1 style="font-size:1.8rem"> in ${inputday + "/"+ inputmonth+"/"+inputyear} the day was :  </h1>
+  <h1 style="color:#74FF8A; padding:20px; font-size:2.1rem"> ${result()} </h1>
+  ` ;
 }
 doomsday_of_history()
